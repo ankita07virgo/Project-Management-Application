@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.AddAssociateFragment">
+
+    <include
+        android:id="@+id/mainheader_layout" layout="@layout/main_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/header_bottomguide"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/header_bottomguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08"/>
+
+    <EditText
+        android:id="@+id/et_employeeid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/employeeid"
+        android:padding="5dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/appcolor"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainheader_layout"
+        app:layout_constraintBottom_toTopOf="@+id/empid_bottomguide"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/empid_bottomguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18"/>
+
+    <EditText
+        android:id="@+id/et_employeename"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/employeename"
+        android:padding="5dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/appcolor"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_employeeid"
+        app:layout_constraintBottom_toTopOf="@+id/empname_bottomguide"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/empname_bottomguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28"/>
+
+    <EditText
+        android:id="@+id/et_employeeband"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/employeeband"
+        android:padding="5dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/appcolor"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_employeename"
+        app:layout_constraintBottom_toTopOf="@+id/empband_bottomguide"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/empband_bottomguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38"/>
+
+    <EditText
+        android:id="@+id/et_employeedesignation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/employeedesignation"
+        android:padding="5dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/appcolor"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_employeeband"
+        app:layout_constraintBottom_toTopOf="@+id/empdesignation_bottomguide"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/empdesignation_bottomguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup_department"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/empdepartment_startguide"
+        app:layout_constraintTop_toBottomOf="@+id/et_employeedesignation"
+        app:layout_constraintBottom_toTopOf="@+id/empdepartment_bottomguide"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_android"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/android"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:id="@+id/rb_ios"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/ios"
+            android:checked="false"
+            android:textSize="@dimen/_12sdp"
+             />
+        <RadioButton
+            android:id="@+id/rb_ux"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/ux"
+            android:checked="false"
+            android:layout_marginEnd="5dp"
+            android:textSize="@dimen/_12sdp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_tester"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tester"
+            android:checked="false"
+            android:textSize="@dimen/_12sdp"
+            />
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/empdepartment_bottomguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/empdepartment_startguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20"/>
+
+    <Spinner
+        android:id="@+id/spinner_project"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_department"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/empproject_bottomguide"
+        android:spinnerMode="dialog"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/empproject_bottomguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_submit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/coloredbg"
+        android:fontFamily="sans-serif"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/submit_bottomguide"
+        app:layout_constraintTop_toTopOf="@+id/submit_topguide" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/submit_topguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/submit_bottomguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

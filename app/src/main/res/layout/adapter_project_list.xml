@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/india_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:orientation="vertical"
+       android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_projectname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:gravity="center_horizontal|center_vertical"
+        android:fontFamily="sans-serif"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:hint="project name"
+        android:background="@drawable/roundredstrokebg"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_11sdp" />
+
+    </LinearLayout>

@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">ProjectManagementApplication</string>
+    <string name="associate">Associate</string>
+    <string name="projects">Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_associate">Add Associate</string>
+    <string name="employeeid">Employee Id</string>
+    <string name="employeename">Employee Name</string>
+    <string name="employeeband">Employee Band</string>
+    <string name="employeedesignation">Employee Designation</string>
+    <string name="android">Android</string>
+    <string name="ios">IOS</string>
+    <string name="ux">UX</string>
+    <string name="tester">Tester</string>
+    <string name="submit">SUBMIT</string>
+    <string name="emptyID">Please enter EmployeeID</string>
+    <string name="emptyName">Please enter Employee Name</string>
+    <string name="emptyBand">Please enter Employee Band</string>
+    <string name="emptyDesignation">Please enter Employee Designation</string>
+    <string name="selectDepartment">Please select department</string>
+    <string name="selectProject">Please select project</string>
+    <string name="successfully">Employee added Successfully</string>
+    <string name="enter_project_name">Enter Project Name</string>
+    <string name="add_project">Add Project</string>
+    <string name="emptyProject">Please Enter Project Name</string>
+    <string name="project_successfully">Project Added Successfully</string>
+    <string name="deleted_successfully">Deleted Successfully</string>
 </resources>

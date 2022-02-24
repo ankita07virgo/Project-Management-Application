@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.AddProjectFragment">
+
+    <include
+        android:id="@+id/mainheader_layout" layout="@layout/main_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/header_bottomguide"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/header_bottomguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08"/>
+
+    <EditText
+        android:id="@+id/et_projectname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/enter_project_name"
+        android:padding="5dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/appcolor"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainheader_layout"
+        app:layout_constraintBottom_toTopOf="@+id/projectname_bottomguide"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/projectname_bottomguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_submit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/coloredbg"
+        android:fontFamily="sans-serif"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/submit_bottomguide"
+        app:layout_constraintTop_toBottomOf="@+id/et_projectname" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/submit_bottomguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

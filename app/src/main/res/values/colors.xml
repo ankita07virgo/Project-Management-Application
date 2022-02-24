@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="appcolor">#fc5203</color>
+    <color name="grey">#787777</color>
+    <color name="brown">#f29027</color>
+    <color name="notiSuccessColor">#24a903</color>
+    <color name="notiFailColor">#f4000c</color>
 </resources>
